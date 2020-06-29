@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import App from './index';
 
-ReactDOM.render(<App />, document.getElementById("container"));
+ReactDOM.render(<App theme="light"/>, document.getElementById("container"));
