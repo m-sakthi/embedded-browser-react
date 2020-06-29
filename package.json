@@ -1,5 +1,5 @@
 {
-  "name": "embedded-browser-react",
+  "name": "embedded-react-browser",
   "version": "0.0.1",
   "description": "To running a web preview within your browser",
   "main": "index.js",
