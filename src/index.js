@@ -44,7 +44,7 @@ export default ({ url, theme }) => {
 
   return (
     <div id={PARENT_CONTAINER} className="container" style={{ display: 'none' }}>
-      <div className="header">
+      <div className={`header ${themeClass}`}>
         <button onClick={back} className={`btn al-itm-c mr-rt-4 rotated-180 fs-18 ${themeClass}`}>&#x2794;</button>
         <button onClick={forward} className={`btn al-itm-c mr-rt-4 fs-18 ${themeClass}`}>&#x2794;</button>
         <button onClick={reload} className={`btn mr-rt-4 fs-24 rotated-90 ${themeClass}`}>&#x21bb;</button>

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "cp ./src/styles.css . && babel src/index.js -o ./index.js"
+    "build": "babel src/index.js -o ./index.js && cp ./src/styles.css .",
+    "build:publish": "babel src/index.js -o ./index.js && cp ./src/styles.css . && npm publish --access public"
   },
   "author": "Sakthivel M <msv300@gmail.com>",
   "license": "MIT",
