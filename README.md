@@ -1,6 +1,6 @@
 ## Embedded Browser Component for React Apps
 
-![alt text](https://github.com/m-sakthi/embedded-browser-react/blob/master/src/screenshot.png?raw=true)
+![embedded-browser-react](https://github.com/m-sakthi/embedded-browser-react/blob/master/src/screenshot.png?raw=true)
 
 To install package
 
