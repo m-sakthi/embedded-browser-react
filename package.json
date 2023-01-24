@@ -1,12 +1,12 @@
 {
   "name": "embedded-react-browser",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "To run a web preview within your browser",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "babel src/index.js -o ./index.js && cp ./src/styles.css .",
-    "build:publish": "babel src/index.js -o ./index.js && cp ./src/styles.css . && npm publish --access public"
+    "start": "webpack-dev-server --mode development",
+    "build": "babel src/browser.js -o ./index.js && cp ./src/styles.css .",
+    "build:publish": "babel src/browser.js -o ./index.js && cp ./src/styles.css . && npm publish --access public"
   },
   "author": "Sakthivel M <msv300@gmail.com>",
   "license": "MIT",

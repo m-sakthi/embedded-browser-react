@@ -1,11 +1,12 @@
 body {
   display: block;
-  margin : 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
-  width    : 100%;
-  height   : 100%;
+  width: 100%;
+  height: 100%;
   min-width: 220px;
 }
 
@@ -14,48 +15,68 @@ body {
 }
 
 .light {
-  color           : #181818;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.dark {
-  color           : #F1F1F1;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.header {
-  display    : flex;
-  align-items: center;
-  height     : 50px;
-  padding    : 0 10px;
-}
-
-.header-light {
+  color: #181818;
   background-color: #F4F4F4;
 }
 
-.header-dark {
-  background-color: #000A13;
+.dark {
+  color: #F1F1F1;
+  background-color: #181D27;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.light > button {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.light > button .fill {
+  fill: #181D27;
+}
+
+.light > button .stroke {
+  stroke: #181D27;
+}
+
+.dark > button {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .url-bar {
-  flex         : 1;
-  display      : flex;
-  align-items  : center;
+  flex: 1;
+  display: flex;
+  align-items: center;
   border-radius: 16px;
-  min-width    : 60px;
-  height       : 32px;
+  min-width: 60px;
+  height: 32px;
+  font-family: Arial, sans-serif;
 }
 
+.light > .url-bar  {
+  color: #181818;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark > .url-bar {
+  color: #F1F1F1;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
 .txt-elip {
-  margin        : 0;
-  font-size     : 14px;
+  margin: 0;
+  font-size: 14px;
   letter-spacing: 0.9px;
-  font-weight   : 400;
-  padding       : 10px 20px;
-  white-space   : nowrap;
-  overflow      : hidden;
-  text-overflow : ellipsis;
+  font-weight: 400;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* .urlBar:hover {
@@ -64,16 +85,17 @@ body {
 } */
 
 .btn {
-  display        : flex;
-  border         : none;
-  background     : none;
-  outline        : none;
-  font-weight    : 400;
-  width          : 30px;
-  height         : 30px;
-  border-radius  : 15px;
-  align-items    : flex-start;
-  justify-content: center;
+  /* display: flex; */
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 400;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 15px;
+  /* align-items: flex-start;
+  justify-content: center; */
 }
 
 .mr-rt-4 {
@@ -118,9 +140,9 @@ body {
 }
 
 .new-window::after {
-  content    : "\2197";
-  font-size  : 13px;
-  position   : absolute;
+  content: "\2197";
+  font-size: 13px;
+  position: absolute;
   font-weight: 900;
   margin-left: 3px;
 }
@@ -134,26 +156,31 @@ body {
   cursor: pointer;
 }
 
-button.light {
+.light button {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-button.light:hover {
+.light button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-button.light:active {
+.light button:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-button.dark {
+.dark button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-button.dark:hover {
+.dark button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-button.dark:active {
+.dark button:active {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.browser-in-browser-mokmijnuhb {
+  border: none;
+  margin: none;
 }

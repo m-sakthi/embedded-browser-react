@@ -1,6 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Browser from './browser';
 
-import App from './index';
-
-ReactDOM.render(<App theme="light"/>, document.getElementById("container"));
+export default () => {
+  return (
+    // You can either pass url or a child
+    <Browser
+      // url="https://somedomain.com"
+      theme='light'>
+      <h1>Hello world</h1>
+    </Browser>
+  );
+};
