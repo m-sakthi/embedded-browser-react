@@ -11,7 +11,7 @@ npm install embedded-react-browser
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PreviewBrowser from 'embedded-browser-react';
+import PreviewBrowser from 'embedded-react-browser';
 
 const root = ReactDOM.createRoot(document.getElementById("container"));
 root.render(<PreviewBrowser url="" theme="dark" />);
