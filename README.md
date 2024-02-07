@@ -5,7 +5,7 @@
 To install package
 
 ```
-npm install embedded-browser-react
+npm install embedded-react-browser
 ```
 
 ```
